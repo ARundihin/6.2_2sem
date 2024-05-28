@@ -14,7 +14,8 @@ int main()
     setlocale(LC_ALL, "Russian");
 
     DynamicArray exhibits;
-
+    DynamicArray exh;
+    
     Exhibit* coin = new Coin("Монета", 2019, 1.0, 2000, 2020);
     exhibits.addElement(coin);
 
@@ -35,6 +36,8 @@ int main()
     exhibits.removeElement(coin);
     exhibits.removeElement(painting);
 
+    exh = exhibits;
+    exhibits.clear();
     exhibits.printElements();
 
     return 0;
