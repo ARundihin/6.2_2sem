@@ -23,7 +23,6 @@ public:
     void removeElement(Exhibit* element);
     void printElements() const;
 
-protected:
     virtual void expandCapacity();
     int findIndex(Exhibit* element) const;
     void clear();
